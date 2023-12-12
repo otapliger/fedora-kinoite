@@ -13,6 +13,7 @@ and the following removed:
 - fedora-workstation-backgrounds
 - plasma-workspace-wallpapers
 - kdeplasma-addons
+- discover
 - firefox
 
 ## Usage
