@@ -6,8 +6,6 @@ LABEL org.opencontainers.image.source="https://github.com/otapliger/fedora-kinoi
 LABEL org.opencontainers.image.licenses="MIT"
 
 RUN rpm-ostree install \
-  firefox-langpacks \
-  firefox \
   neovim \
   fish \
   zsh \
@@ -23,7 +21,9 @@ RUN rpm-ostree override remove \
   plasma-discover-libs \
   plasma-discover-flatpak \
   plasma-discover-notifier \
-  plasma-discover-rpm-ostree
+  plasma-discover-rpm-ostree \
+  firefox-langpacks \
+  firefox
 
 COPY usr usr
 
