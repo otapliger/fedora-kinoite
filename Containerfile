@@ -5,6 +5,9 @@ LABEL org.opencontainers.image.description="Customized image of Fedora Kinoite"
 LABEL org.opencontainers.image.source="https://github.com/otapliger/fedora-kinoite"
 LABEL org.opencontainers.image.licenses="MIT"
 
+COPY etc etc
+COPY usr usr
+
 RUN rpm-ostree install \
   neovim \
   fish \
@@ -27,7 +30,5 @@ RUN rpm-ostree override remove \
   plasma-discover-rpm-ostree \
   firefox-langpacks \
   firefox
-
-COPY usr usr
 
 RUN ostree container commit
