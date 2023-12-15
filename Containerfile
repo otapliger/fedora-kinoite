@@ -11,7 +11,10 @@ RUN rpm-ostree install \
   zsh \
   iwd \
   distrobox \
-  && rm -rf /var/lib/unbound/root.key
+  && rm -rf /var/lib/unbound/root.key \
+  /etc/yum.repos.d/rpmfusion-nonfree* \
+  /etc/yum.repos.d/*PyCharm.repo \
+  /etc/yum.repos.d/*chrome.repo
 
 RUN rpm-ostree override remove \
   fedora-workstation-backgrounds \
