@@ -1,20 +1,32 @@
 # Customized image of Fedora Kinoite
 
-This is an image of Fedora Kinoite with the following packages overlayed:
+This is an image of Fedora Kinoite with the following changes:
 
-- iwd
-- zsh
-- fish
-- neovim
-- distrobox
+**Third-party repositories:**
 
-and the following removed:
+- _Added_
+  - 1Password
+  - Tailscale
 
-- fedora-workstation-backgrounds
-- plasma-workspace-wallpapers
-- kdeplasma-addons
-- discover
-- firefox
+- _Removed_
+  - RPM Fusion
+  - Google Chrome
+  - PyCharm
+
+**Packages:**
+
+- _Overlayed_
+  - iwd
+  - fish
+  - neovim
+  - distrobox
+
+- _Removed_
+  - fedora-workstation-backgrounds
+  - plasma-workspace-wallpapers
+  - kdeplasma-addons
+  - discover
+  - firefox
 
 ## Usage
 

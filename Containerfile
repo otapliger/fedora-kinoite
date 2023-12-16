@@ -11,7 +11,6 @@ COPY usr usr
 RUN rpm-ostree install \
   neovim \
   fish \
-  zsh \
   iwd \
   distrobox \
   && rm -rf /var/lib/unbound/root.key \
